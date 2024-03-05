@@ -1,0 +1,19 @@
+/* 字体颜色 */
+@mixin color($color: #333) {
+	color: $color;
+}
+
+/* 字体颜色 (别称) */
+@mixin font-color($color: #333) {
+	@include color($color);
+}
+
+/* 背景颜色 */
+@mixin bg-color($color:  #fff) {
+	background-color: $color;
+}
+
+/* 背景颜色 (别称) */
+@mixin background-color($color:  #fff) {
+	@include bg-color($color);
+}

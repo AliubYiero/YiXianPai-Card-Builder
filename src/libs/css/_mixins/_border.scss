@@ -1,0 +1,25 @@
+/* 边框 */
+@mixin border($size: 1px, $color: #333 ) {
+	border: $size solid $color;
+}
+
+/* 圆角边框 */
+@mixin round($size: 10px) {
+	border-radius: $size
+}
+
+/* 圆角边框 (别称) */
+@mixin border-round($size: 10px) {
+	@include round($size);
+	overflow: hidden;
+}
+
+/* 阴影 */
+@mixin shadow($color: #333,  $size: 2px, $x-padding: 0, $y-padding: 0) {
+	box-shadow: $color $x-padding $y-padding $size;
+}
+
+/* 内盒子 */
+@mixin border-box {
+	box-sizing: border-box;
+}

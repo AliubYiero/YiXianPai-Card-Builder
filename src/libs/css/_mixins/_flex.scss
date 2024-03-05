@@ -1,0 +1,20 @@
+/* 使用 flex 布局 */
+@mixin flex() {
+	display: flex;
+	gap: 10px;
+}
+
+/* flex布局水平居中*/
+@mixin flex-center() {
+	justify-content: center;
+}
+
+/* flex布局垂直居中*/
+@mixin flex-vertical-center() {
+	align-items: center;
+}
+
+/* 纵向 flex 布局 */
+@mixin flex-column() {
+	flex-flow: column;
+}

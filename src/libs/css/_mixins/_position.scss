@@ -1,0 +1,50 @@
+/* 相对定位 */
+@mixin relative($left: 0, $top: 0, $right: 0, $bottom: 0) {
+	position: relative;
+	@if ($left != 0) {
+		left: $left;
+	}
+	@if ($top != 0) {
+		top: $top;
+	}
+	@if ($bottom  != 0) {
+		bottom: $bottom;
+	}
+	@if ($right != 0) {
+		right: $right;
+	}
+}
+
+/* 绝对定位 */
+@mixin absolute($left: 0, $top: 0, $right: 0, $bottom: 0) {
+	position: absolute;
+	@if ($left != 0) {
+		left: $left;
+	}
+	@if ($top != 0) {
+		top: $top;
+	}
+	@if ($bottom  != 0) {
+		bottom: $bottom;
+	}
+	@if ($right != 0) {
+		right: $right;
+	}
+}
+
+/* 固定定位 */
+@mixin fixed($left: 0, $top: 0, $right: 0, $bottom: 0) {
+	position: fixed;
+	@if ($left != 0) {
+		left: $left;
+	}
+	@if ($top != 0) {
+		top: $top;
+	}
+	@if ($bottom  != 0) {
+		bottom: $bottom;
+	}
+	@if ($right != 0) {
+		right: $right;
+	}
+}

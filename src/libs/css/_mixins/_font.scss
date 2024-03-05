@@ -1,0 +1,24 @@
+/* 字体大小 */
+@mixin font-size($size: 16px) {
+	font-size: $size;
+}
+
+/* 字体粗体 */
+@mixin font-bold($bold-size: bold) {
+	font-weight: $bold-size;
+}
+
+/* 字体位置 */
+@mixin font-position($position: left) {
+	text-align: $position;
+}
+
+/* 字体居中 */
+@mixin font-center() {
+	@include font-position(center);
+}
+
+/* 字体居右 */
+@mixin font-right() {
+	@include font-position(right);
+}
